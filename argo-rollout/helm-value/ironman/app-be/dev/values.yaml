@@ -10,19 +10,3 @@ imagePullSecrets: []
 service:
   type: ClusterIP
   port: 80
-
-wiremock:
-  mapping: |
-    {
-      "request": {
-        "method": "GET",
-        "url": "/hello"
-      },
-      "response": {
-        "status": 200,
-        "body": "Hello, Ironman Version2!",
-        "headers": {
-          "Content-Type": "text/plain"
-        }
-      }
-    }
