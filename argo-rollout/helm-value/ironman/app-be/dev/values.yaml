@@ -1,18 +1,28 @@
-# Default values for sample-app.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
 replicaCount: 5
 
 image:
   repository: noppon/ironman
   tag: 0.0.1
-  # tag: alpine3.20
   pullPolicy: IfNotPresent
-  # Overrides the image tag whose default is the chart appVersion.
 
 imagePullSecrets: []
 
 service:
   type: ClusterIP
   port: 80
+
+wiremock:
+  mapping: |
+    {
+      "request": {
+        "method": "GET",
+        "url": "/hello"
+      },
+      "response": {
+        "status": 200,
+        "body": "Hello, Ironman Version2!",
+        "headers": {
+          "Content-Type": "text/plain"
+        }
+      }
+    }
