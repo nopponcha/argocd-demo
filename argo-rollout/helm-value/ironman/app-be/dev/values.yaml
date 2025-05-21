@@ -20,7 +20,7 @@ wiremock:
       },
       "response": {
         "status": 200,
-        "body": "Hello, Ironman Version2!",
+        "body": "Hello, Ironman Version1!",
         "headers": {
           "Content-Type": "text/plain"
         }
