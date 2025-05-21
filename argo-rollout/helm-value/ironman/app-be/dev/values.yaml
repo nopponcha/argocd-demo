@@ -5,8 +5,8 @@
 replicaCount: 5
 
 image:
-  repository: nginx
-  tag: 1.26.3-alpine3.20-perl
+  repository: noppon/ironman
+  tag: 0.0.1
   # tag: alpine3.20
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
