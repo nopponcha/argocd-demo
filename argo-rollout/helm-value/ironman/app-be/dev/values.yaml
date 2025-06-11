@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: noppon/ironman
-  tag: 0.0.2
+  tag: 0.0.1
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
